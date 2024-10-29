@@ -1,0 +1,166 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MyIdReader
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreImage.CIFilterBuiltins
+import Combine
+import CoreImage
+import CoreVideo
+import DeveloperToolsSupport
+import Foundation
+@_exported import MyIdReader
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class MyIdReaderConfig : ObjectiveC.NSObject {
+  @objc public var documentType: MyIdReader.MyIdReaderDocumentType
+  @objc public var locale: MyIdReader.MyIdReaderLocale
+  @objc public var presentationStyle: MyIdReader.MyIdReaderPresentationStyle
+  @objc public var appearance: MyIdReader.MyIdReaderAppearance?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MyIdReaderPresentationStyle : Swift.Int {
+  case Full = 0
+  case Sheet
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderException : ObjectiveC.NSObject {
+  @objc public var message: Swift.String?
+  @objc public var code: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ObjectiveC.NSObject : MyIdReader.ImageCroppable {
+}
+extension CoreGraphics.CGImage : MyIdReader.ImageCroppable {
+}
+public protocol ImageCroppable {
+}
+public enum DetectionType {
+  case face
+  case barcode
+  case text
+  public static func == (a: MyIdReader.DetectionType, b: MyIdReader.DetectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ImageDetectResult<T> {
+  case success([T])
+  case notFound
+  case failure(any Swift.Error)
+}
+public struct ImageDetect<T> {
+}
+extension MyIdReader.ImageCroppable {
+  public var detector: MyIdReader.ImageDetect<Self> {
+    get
+  }
+}
+extension MyIdReader.ImageDetect where T : CoreGraphics.CGImage {
+  public func crop(type: MyIdReader.DetectionType, completion: @escaping (MyIdReader.ImageDetectResult<CoreGraphics.CGImage>) -> Swift.Void)
+}
+extension MyIdReader.ImageDetect where T : UIKit.UIImage {
+  public func crop(type: MyIdReader.DetectionType, completion: @escaping (MyIdReader.ImageDetectResult<UIKit.UIImage>) -> Swift.Void)
+}
+@objc public enum MyIdReaderLocale : Swift.Int {
+  case Uzbek = 0
+  case English
+  case Russian
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MyIdReaderDocumentType : Swift.Int {
+  case IdCard = 0
+  case Passport
+  case Manual
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderResult : ObjectiveC.NSObject {
+  @objc public var passportResult: MyIdReader.MyIdReaderPassportResult?
+  @objc public var selfie: UIKit.UIImage?
+  @objc public var documentFace: UIKit.UIImage?
+  @objc public var documentFront: UIKit.UIImage?
+  @objc public var documentBack: UIKit.UIImage?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderPassportResult : ObjectiveC.NSObject {
+  @objc public var pinfl: Swift.String
+  @objc public var document: Swift.String
+  @objc public var lastName: Swift.String
+  @objc public var firstName: Swift.String
+  @objc public var expiryDate: Swift.String
+  @objc public var birthDate: Swift.String
+  @objc public var mrz: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderAction : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @objc public class Complete : MyIdReader.MyIdReaderAction {
+    @objc public var result: MyIdReader.MyIdReaderResult
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc public class Error : MyIdReader.MyIdReaderAction {
+    @objc public var exception: MyIdReader.MyIdReaderException
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc public class Permission : MyIdReader.MyIdReaderAction {
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @objc public class Cancel : MyIdReader.MyIdReaderAction {
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderAppearance : ObjectiveC.NSObject {
+  @objc public var logo: UIKit.UIImage?
+  @objc public var colorPrimary: UIKit.UIColor?
+  @objc public var colorError: UIKit.UIColor?
+  @objc public var colorBackground: UIKit.UIColor?
+  @objc public var colorForeground: UIKit.UIColor?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol MyIdReaderClientDelegate {
+  @objc func onCompletion(action: MyIdReader.MyIdReaderAction)
+}
+@_inheritsConvenienceInitializers @objc public class MyIdReaderClient : ObjectiveC.NSObject {
+  @objc public class func showScanner(withConfig config: MyIdReader.MyIdReaderConfig, withDelegate delegate: any MyIdReader.MyIdReaderClientDelegate)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MyIdReader.MyIdReaderPresentationStyle : Swift.Equatable {}
+extension MyIdReader.MyIdReaderPresentationStyle : Swift.Hashable {}
+extension MyIdReader.MyIdReaderPresentationStyle : Swift.RawRepresentable {}
+extension MyIdReader.DetectionType : Swift.Equatable {}
+extension MyIdReader.DetectionType : Swift.Hashable {}
+extension MyIdReader.MyIdReaderLocale : Swift.Equatable {}
+extension MyIdReader.MyIdReaderLocale : Swift.Hashable {}
+extension MyIdReader.MyIdReaderLocale : Swift.RawRepresentable {}
+extension MyIdReader.MyIdReaderDocumentType : Swift.Equatable {}
+extension MyIdReader.MyIdReaderDocumentType : Swift.Hashable {}
+extension MyIdReader.MyIdReaderDocumentType : Swift.RawRepresentable {}

@@ -1,0 +1,11 @@
+framework module MyIdReader {
+  umbrella header "MyIdReader.h"
+  export *
+
+  module * { export * }
+}
+
+module MyIdReader.Swift {
+  header "MyIdReader-Swift.h"
+  requires objc
+}
