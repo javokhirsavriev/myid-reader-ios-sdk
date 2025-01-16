@@ -361,12 +361,14 @@ SWIFT_PROTOCOL("_TtP10MyIdReader24MyIdReaderClientDelegate_")
 @end
 
 enum MyIdReaderDocumentType : NSInteger;
+enum MyIdReaderEntryType : NSInteger;
 enum MyIdReaderLocale : NSInteger;
 enum MyIdReaderPresentationStyle : NSInteger;
 
 SWIFT_CLASS("_TtC10MyIdReader16MyIdReaderConfig")
 @interface MyIdReaderConfig : NSObject
 @property (nonatomic) enum MyIdReaderDocumentType documentType;
+@property (nonatomic) enum MyIdReaderEntryType entryType;
 @property (nonatomic) enum MyIdReaderLocale locale;
 @property (nonatomic) enum MyIdReaderPresentationStyle presentationStyle;
 @property (nonatomic, strong) MyIdReaderAppearance * _Nullable appearance;
@@ -377,6 +379,12 @@ typedef SWIFT_ENUM(NSInteger, MyIdReaderDocumentType, open) {
   MyIdReaderDocumentTypeIdCard = 0,
   MyIdReaderDocumentTypePassport = 1,
   MyIdReaderDocumentTypeManual = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, MyIdReaderEntryType, open) {
+  MyIdReaderEntryTypeSelfieOnly = 0,
+  MyIdReaderEntryTypePassportOnly = 1,
+  MyIdReaderEntryTypeFullIdent = 2,
 };
 
 @class NSString;
@@ -803,12 +811,14 @@ SWIFT_PROTOCOL("_TtP10MyIdReader24MyIdReaderClientDelegate_")
 @end
 
 enum MyIdReaderDocumentType : NSInteger;
+enum MyIdReaderEntryType : NSInteger;
 enum MyIdReaderLocale : NSInteger;
 enum MyIdReaderPresentationStyle : NSInteger;
 
 SWIFT_CLASS("_TtC10MyIdReader16MyIdReaderConfig")
 @interface MyIdReaderConfig : NSObject
 @property (nonatomic) enum MyIdReaderDocumentType documentType;
+@property (nonatomic) enum MyIdReaderEntryType entryType;
 @property (nonatomic) enum MyIdReaderLocale locale;
 @property (nonatomic) enum MyIdReaderPresentationStyle presentationStyle;
 @property (nonatomic, strong) MyIdReaderAppearance * _Nullable appearance;
@@ -819,6 +829,12 @@ typedef SWIFT_ENUM(NSInteger, MyIdReaderDocumentType, open) {
   MyIdReaderDocumentTypeIdCard = 0,
   MyIdReaderDocumentTypePassport = 1,
   MyIdReaderDocumentTypeManual = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, MyIdReaderEntryType, open) {
+  MyIdReaderEntryTypeSelfieOnly = 0,
+  MyIdReaderEntryTypePassportOnly = 1,
+  MyIdReaderEntryTypeFullIdent = 2,
 };
 
 @class NSString;

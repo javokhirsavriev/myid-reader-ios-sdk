@@ -236,6 +236,99 @@
           },
           {
             "kind": "Var",
+            "name": "entryType",
+            "printedName": "entryType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyIdReaderEntryType",
+                "printedName": "MyIdReader.MyIdReaderEntryType",
+                "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MyIdReader@objc(cs)MyIdReaderConfig(py)entryType",
+            "mangledName": "$s10MyIdReader0abC6ConfigC9entryTypeAA0abc5EntryF0Ovp",
+            "moduleName": "MyIdReader",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyIdReader@objc(cs)MyIdReaderConfig(im)entryType",
+                "mangledName": "$s10MyIdReader0abC6ConfigC9entryTypeAA0abc5EntryF0Ovg",
+                "moduleName": "MyIdReader",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MyIdReader@objc(cs)MyIdReaderConfig(im)setEntryType:",
+                "mangledName": "$s10MyIdReader0abC6ConfigC9entryTypeAA0abc5EntryF0Ovs",
+                "moduleName": "MyIdReader",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MyIdReader0abC6ConfigC9entryTypeAA0abc5EntryF0OvM",
+                "mangledName": "$s10MyIdReader0abC6ConfigC9entryTypeAA0abc5EntryF0OvM",
+                "moduleName": "MyIdReader",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "locale",
             "printedName": "locale",
             "children": [
@@ -5630,6 +5723,265 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "MyIdReaderEntryType",
+        "printedName": "MyIdReaderEntryType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SelfieOnly",
+            "printedName": "SelfieOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyIdReader.MyIdReaderEntryType.Type) -> MyIdReader.MyIdReaderEntryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyIdReader.MyIdReaderEntryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyIdReaderEntryType",
+                        "printedName": "MyIdReader.MyIdReaderEntryType",
+                        "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType@MyIdReaderEntryTypeSelfieOnly",
+            "mangledName": "$s10MyIdReader0abC9EntryTypeO10SelfieOnlyyA2CmF",
+            "moduleName": "MyIdReader",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "PassportOnly",
+            "printedName": "PassportOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyIdReader.MyIdReaderEntryType.Type) -> MyIdReader.MyIdReaderEntryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyIdReader.MyIdReaderEntryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyIdReaderEntryType",
+                        "printedName": "MyIdReader.MyIdReaderEntryType",
+                        "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType@MyIdReaderEntryTypePassportOnly",
+            "mangledName": "$s10MyIdReader0abC9EntryTypeO12PassportOnlyyA2CmF",
+            "moduleName": "MyIdReader",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "FullIdent",
+            "printedName": "FullIdent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MyIdReader.MyIdReaderEntryType.Type) -> MyIdReader.MyIdReaderEntryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MyIdReader.MyIdReaderEntryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MyIdReaderEntryType",
+                        "printedName": "MyIdReader.MyIdReaderEntryType",
+                        "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType@MyIdReaderEntryTypeFullIdent",
+            "mangledName": "$s10MyIdReader0abC9EntryTypeO9FullIdentyA2CmF",
+            "moduleName": "MyIdReader",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MyIdReader.MyIdReaderEntryType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MyIdReaderEntryType",
+                    "printedName": "MyIdReader.MyIdReaderEntryType",
+                    "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MyIdReader0abC9EntryTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10MyIdReader0abC9EntryTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "MyIdReader",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MyIdReader0abC9EntryTypeO8rawValueSivp",
+            "mangledName": "$s10MyIdReader0abC9EntryTypeO8rawValueSivp",
+            "moduleName": "MyIdReader",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MyIdReader0abC9EntryTypeO8rawValueSivg",
+                "mangledName": "$s10MyIdReader0abC9EntryTypeO8rawValueSivg",
+                "moduleName": "MyIdReader",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MyIdReader@E@MyIdReaderEntryType",
+        "mangledName": "$s10MyIdReader0abC9EntryTypeO",
+        "moduleName": "MyIdReader",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyIdReader",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5832,238 +6184,105 @@
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 565,
+      "offset": 585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 723,
+      "offset": 743,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 757,
+      "offset": 777,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 936,
+      "offset": 956,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1199,
       "length": 24,
       "value": "\"myid_reader_icon_check\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1266,
+      "offset": 1286,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1398,
+      "offset": 1418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 1874,
+      "offset": 1894,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 2080,
+      "offset": 2100,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 2769,
+      "offset": 2789,
       "length": 42,
       "value": "\"UIDeviceOrientationDidChangeNotification\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4298,
-      "length": 3,
-      "value": "\"O\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4309,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4335,
-      "length": 3,
-      "value": "\"I\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4346,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4354,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4420,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4498,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4509,
-      "length": 3,
-      "value": "\"O\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4535,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4546,
-      "length": 3,
-      "value": "\"I\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4554,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4635,
-      "length": 3,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4646,
-      "length": 3,
-      "value": "\"O\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4672,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4683,
-      "length": 3,
-      "value": "\"I\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4691,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4755,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4817,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
-      "kind": "StringLiteral",
-      "offset": 4867,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 5376,
+      "offset": 4683,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6179,
+      "offset": 5486,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6795,
+      "offset": 6102,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6863,
+      "offset": 6170,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Face detection\/FaceDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6932,
+      "offset": 6239,
       "length": 2,
       "value": "40"
     },
@@ -7057,364 +7276,525 @@
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 9707,
+      "offset": 9736,
       "length": 4,
       "value": "\"< \""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 9719,
+      "offset": 9748,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 9807,
+      "length": 5,
+      "value": "\"≤\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 9820,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 9879,
+      "length": 5,
+      "value": "\"‹\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 9892,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 9977,
+      "offset": 10150,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 10199,
+      "offset": 10372,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 11782,
+      "offset": 11955,
       "length": 4,
       "value": "1108"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 11961,
+      "offset": 12134,
       "length": 4,
       "value": "1108"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 12140,
+      "offset": 12313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 12650,
+      "offset": 12823,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 12874,
+      "offset": 13047,
       "length": 24,
       "value": "\"myid_reader_shape_face\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 12991,
+      "offset": 13164,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13490,
+      "length": 3,
+      "value": "\"O\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13501,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13527,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13538,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13546,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13612,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13690,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13701,
+      "length": 3,
+      "value": "\"O\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13727,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13738,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13746,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13827,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13838,
+      "length": 3,
+      "value": "\"O\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13864,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13875,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13883,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 13947,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 14009,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 14059,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13288,
+      "offset": 14567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13733,
+      "offset": 15054,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13830,
+      "offset": 15165,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13868,
+      "offset": 15203,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13905,
+      "offset": 15240,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13943,
+      "offset": 15278,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13980,
+      "offset": 15315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 14240,
+      "offset": 15575,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 14374,
+      "offset": 15709,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 14508,
+      "offset": 15843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 14613,
+      "offset": 15948,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 14665,
+      "offset": 16000,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 14719,
+      "offset": 16054,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 15016,
+      "offset": 16351,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 15074,
+      "offset": 16409,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 15136,
+      "offset": 16471,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 15436,
+      "offset": 16771,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 15504,
+      "offset": 16839,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 15945,
+      "offset": 17280,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 16017,
+      "offset": 17352,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 17018,
+      "offset": 18353,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 17148,
+      "offset": 18483,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 17434,
+      "offset": 18769,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 17825,
+      "offset": 19160,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 17862,
+      "offset": 19197,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 18093,
+      "offset": 19428,
       "length": 23,
       "value": "\"myid_reader_shape_mrz\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 18224,
+      "offset": 19559,
       "length": 28,
       "value": "\"myid_reader_shape_passport\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 18370,
+      "offset": 19705,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 18428,
+      "offset": 19763,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 18469,
+      "offset": 19804,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 18643,
+      "offset": 19978,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 18716,
+      "offset": 20051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 18957,
+      "offset": 20292,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 19164,
+      "offset": 20499,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 19813,
+      "offset": 21148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 19929,
+      "offset": 21264,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 19964,
+      "offset": 21299,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 20161,
+      "offset": 21496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 20901,
+      "offset": 22236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "StringLiteral",
-      "offset": 21101,
+      "offset": 22436,
       "length": 24,
       "value": "\"myid_reader_powered_by\""
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 21281,
+      "offset": 22616,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Presentation\/Document detection\/DocumentDetectionScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 21354,
+      "offset": 22689,
       "length": 2,
       "value": "50"
     },
@@ -9577,30 +9957,79 @@
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/MyIdReaderClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 764,
+      "offset": 1163,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/MyIdReaderClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1032,
+      "offset": 1383,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/MyIdReaderClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1252,
+      "offset": 1758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/MyIdReaderClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1580,
+      "offset": 2105,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/MyIdReaderClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2387,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 167,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 167,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Capture\/Model\/MyIdReaderEntryType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 9,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/javokhir\/MyFiles\/Development\/AIIG\/MyID\/myid-ios-reader-sdk\/MyIdReader\/Core\/Detector\/DocumentDetector.swift",

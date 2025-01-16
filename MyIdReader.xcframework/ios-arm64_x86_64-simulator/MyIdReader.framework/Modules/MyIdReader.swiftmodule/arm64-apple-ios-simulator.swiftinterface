@@ -19,6 +19,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class MyIdReaderConfig : ObjectiveC.NSObject {
   @objc public var documentType: MyIdReader.MyIdReaderDocumentType
+  @objc public var entryType: MyIdReader.MyIdReaderEntryType
   @objc public var locale: MyIdReader.MyIdReaderLocale
   @objc public var presentationStyle: MyIdReader.MyIdReaderPresentationStyle
   @objc public var appearance: MyIdReader.MyIdReaderAppearance?
@@ -153,6 +154,16 @@ extension MyIdReader.ImageDetect where T : UIKit.UIImage {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public enum MyIdReaderEntryType : Swift.Int {
+  case SelfieOnly = 0
+  case PassportOnly
+  case FullIdent
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension MyIdReader.MyIdReaderPresentationStyle : Swift.Equatable {}
 extension MyIdReader.MyIdReaderPresentationStyle : Swift.Hashable {}
 extension MyIdReader.MyIdReaderPresentationStyle : Swift.RawRepresentable {}
@@ -164,3 +175,6 @@ extension MyIdReader.MyIdReaderLocale : Swift.RawRepresentable {}
 extension MyIdReader.MyIdReaderDocumentType : Swift.Equatable {}
 extension MyIdReader.MyIdReaderDocumentType : Swift.Hashable {}
 extension MyIdReader.MyIdReaderDocumentType : Swift.RawRepresentable {}
+extension MyIdReader.MyIdReaderEntryType : Swift.Equatable {}
+extension MyIdReader.MyIdReaderEntryType : Swift.Hashable {}
+extension MyIdReader.MyIdReaderEntryType : Swift.RawRepresentable {}
